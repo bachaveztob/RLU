@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    width: 100%;
+    background-color: #b51725;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.logo-title .img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.logo-title .img img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.logo-title .title h1 {
+    color: white;
+    font-size: 1.5em;
+}
+
+nav.MENU {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav.MENU a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav.MENU a:hover {
+    background-color: #ea3231;
+}
+
+.section {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.section-inicio {
+    background-color: #f8f8f8;
+}
+
+.section-partidos {
+    background-color: #e8e8e8;
+}
+
+.section-elecciones {
+    background-color: #f8f8f8;
+}
+
+.section-analisis {
+    background-color: #e8e8e8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #0c0c0c;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #040187;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; 
+    position: fixed;
+    width: 50%; 
+    bottom: 0;
+    left: 25%; 
+    height: 60px; 
+}
+
+footer .autor, footer .politicas {
+    margin: 5px 0;
+}
+
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav.MENU {
+        flex-direction: column;
+    }
+
+    nav.MENU a {
+        padding: 10px;
+    }
+
+    .logo-title {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo-title .img {
+        margin-bottom: 10px;
+    }
+}
